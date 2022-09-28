@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>复合标记</title>
+</head>
+
+<body>
+  <!-- Ctrl + / -->
+
+  <!-- 
+    ul是无序清单 li是清单项目
+    type可以指定清单项的提示形状,例如circle就是空心圆
+  -->
+  <ul type="circle">
+    <li>黑暗骑士</li>
+    <li>DarkKnight</li>
+  </ul>
+
+  <!-- ol是有序清单，清单项会自动编号显示 -->
+
+  <ol>
+    <li>GTA5</li>
+    <li>控制</li>
+    <li>原神</li>
+  </ol>
+
+  <ol type="I">
+    <li>肖申客的救赎</li>
+    <li>教父</li>
+    <li>蝙蝠侠之黑暗骑士</li>
+    <li>复联4</li>
+  </ol>
+
+  <!-- 
+    可输入或者选择的元素（表单）
+    开始标记的里面编写的东西叫做属性！！！！
+    例如
+    <p 属性="值" 属性2="值2" ></p>
+    属性可以对编辑的功能进行调整和配置
+    比如 input 标记的 type属性可以控制输入框的类型
+    placeholder属性可以出现输入框的提示信息
+    又比如ol有序清单的type属性可以切换次序的选项
+    比如是数字排序还是罗马字符排序
+  -->
+  用户名：<input type="text" placeholder="请输入用户名">
+  密码：<input type="password" placeholder="请输入密码">
+
+  <input type="number">
+  <input type="date">
+
+  <!-- 下拉选择列表，复合标记 Ctrl + C 复制 Ctrl + V 粘贴 -->
+  <select>
+    <option>湖南省</option>
+    <option>湖北省</option>
+    <option>广东省</option>
+    <option>广西省</option>
+  </select>
+
+  <!-- 
+    select是下拉列表标记，option是下拉的选项
+    特色是可以提供大量的选择项，但是不会占用大量的显示空间
+  -->
+
+
+</body>
+
+</html>
