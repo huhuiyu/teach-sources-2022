@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>复合标记</title>
+</head>
+
+<body>
+
+  <!--
+    Ctrl + /  Shift + alt + F
+    ul是无序清单，属于复合标记，要搭配li一起使用
+    li是清单项
+  -->
+
+  <ul>
+
+    <li>肖申克的救赎</li>
+    <li>教父</li>
+    <li>蝙蝠侠之黑暗骑士</li>
+
+  </ul>
+
+  <!-- ol是有序清单，也是li作为清单项 -->
+  <ol>
+    <li>第一章</li>
+    <li>第二章</li>
+  </ol>
+
+  <!-- 
+    属性是写在开始标记里面的
+    格式是属性名称="属性的值"
+    多个属性要用空格分开
+    不同标记有着不同的属性
+  -->
+  <ol type="I">
+    <li>21 guns</li>
+    <li>Never Say Never</li>
+    <li>K歌之王</li>
+    <li>月亮代表我的心</li>
+  </ol>
+
+  <!-- 可以输入或者选择的元素（表单元素） -->
+  姓名：<input type="text" placeholder="请输入姓名">
+  密码：<input type="password" placeholder="请输入密码">
+  <!-- 
+    input就是表单元素，type属性控制输入元素的类型
+    placeholder属性是没有输入内容时候的提示信息
+  -->
+  <input type="number">
+  <input type="date">
+
+  <!-- 下拉列表 -->
+  省份：
+  <select>
+    <option>===请选择===</option>
+    <option>湖南省</option>
+    <option>湖北省</option>
+    <!-- option添加selected表示设置为默认选中项 -->
+    <option selected>广东省</option>
+
+  </select>
+
+  <!-- web前端开发，html（骨架核心）css（布局和美化）
+  javascript（网页编程语言，控制和数据）
+Ctrl + 空格 是唤醒代码提示 -->
+
+
+  <input id="r01" type="radio" name="sex">
+  <label for="r01">男生</label>
+
+  <label>
+    <input type="radio" name="sex" checked> 女生
+  </label>
+
+  <label>
+    <input type="radio" name="sex" checked> 保密
+  </label>
+
+  <!-- 
+    radio是单选按钮，name属性相同的构成一组
+    也就是说同name的单选按钮构成互斥效果
+    checked属性表示默认选中，但是不可以违背互斥原则
+
+    label作用是将里面的input元素和其它内容构成一个整体
+    点击其它内容和点击input的效果一致
+    也可以将for属性值对应的id元素绑定成一组
+  -->
+
+
+</body>
+
+</html>
