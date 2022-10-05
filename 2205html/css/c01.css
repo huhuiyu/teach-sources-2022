@@ -1,0 +1,27 @@
+/* 
+  .表示class（类）定义，后面紧跟类名称 
+  然后就是一对{}
+  括号里面就是css样式代码
+  页面通过元素的class属性来调用样式，调用时不需要.
+  例如 .abc{ ... }的样式
+  在页面通过 class="abc"即可
+*/
+.a01 {
+  color: #00ff00;
+  font-size: 32px;
+}
+
+.a02 {
+  background-color: #ff0000;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* 
+  background-color表示背景颜色
+  color表示字的颜色（前景色）
+  颜色#开头是rgb三原色，取值都是两位0-f
+  font-size是字体大小,px表示像素
+  text-align是文字对齐方式,center是居中
+    只对div,p,hn这类块元素有效
+*/
