@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>清单和表单元素</title>
+</head>
+
+<body>
+
+  <!-- 
+    复合标记是由多个标记组合形成的
+    ul表示无序清单
+    li表示清单项
+    嵌套起来就构成完整清单效果
+  -->
+  <ul>
+    <li>肖申克的救赎</li>
+    <li>蝙蝠侠之黑暗骑士</li>
+    <li>教父</li>
+  </ul>
+
+  <ol>
+    <li>马里奥</li>
+    <li>gta5</li>
+    <li>doom</li>
+    <li>永劫无间</li>
+  </ol>
+
+  <!-- 
+    ol是有序清单，项目会自动编号
+    写在开始标记里面的内容叫做属性
+    不同属性带有不同的效果来控制标记呈现
+    属性之间用空格分隔
+    格式都是 属性名称="属性的值"
+    有序清单的type属性可以控制序号格式
+  -->
+  <ol type="I">
+    <li>21 guns</li>
+    <li>Never Say Never</li>
+    <li>我的祖国</li>
+    <li>光辉岁月</li>
+  </ol>
+
+  <!-- 表单元素，是可输入或者可选择的元素，用于收集信息 -->
+  用户名：<input type="text" placeholder="请输入用户名">
+  密码：<input type="password" placeholder="请输入密码">
+
+  <!-- 
+    input表单元素，基本上都是输入框
+    type属性决定类型，比如password是密码输入框
+    placeholder属性是没有输入信息时的提示
+  -->
+  <input type="number">
+  <input type="date">
+
+  <hr>
+
+
+  <input type="radio" id="abc" name="sex">
+  <label for="abc">男生</label>
+  <!-- Ctrl + 空格 是唤醒智能提示 -->
+
+  <label>
+    <input type="radio" name="sex" checked> 女生
+  </label>
+
+  <label>
+    <input type="radio" name="sex" checked> 保密
+  </label>
+
+  <!-- 
+    radio是单选按钮，name相同的构成一组
+    同组的单选按钮带有互斥效果，也就是只能有一个是选中的状态
+    checked属性出现就会变成选中的效果，但是不能违背互斥原则
+  -->
+
+  <label>
+    <input type="checkbox">游戏
+  </label>
+
+  <label>
+    <input type="checkbox" checked>音乐
+  </label>
+
+  <label>
+    <input type="checkbox">运动
+  </label>
+
+  <!-- checkbox是复选框 -->
+
+  <select>
+
+    <option>湖南省</option>
+    <option>湖北省</option>
+    <option>海南省</option>
+    <option selected>广东省</option>
+
+  </select>
+
+  <!-- 
+    select是下拉列表，这个元素比较节约空间
+    option是下拉列表的选项，可以有很多个
+    两个必须搭配嵌套才有效果！！！！
+    option的selected属性表示该选项默认是选中状态
+  -->
+
+  <!-- 
+    网页开发，web前端
+    html：超文本标记语言，是网页的核心
+    css：层叠样式表，负责网页的美化以及布局
+    javascript：负责响应用户的操作，以及数据和页面动态效果
+  -->
+
+  <hr>
+</body>
+
+</html>
