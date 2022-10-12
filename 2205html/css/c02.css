@@ -1,0 +1,58 @@
+.img1 {
+  /*   
+    width是宽度,px是单位（像素）
+    height是高度
+    要注意，对图片设置高宽，如果不是原始比例就会发生变形
+    所以一般来说，图片只会设置高和宽中间的一个以保持比例
+  */
+  width: 200px;
+  height: 200px;
+}
+
+/*  背景图片，全页面 */
+.bg1 {
+  /* 
+    background-image是设置背景图片
+    值是url('图片所在位置和名称')
+  */
+  background-image: url('../images/img30.jpg');
+  /* 
+    background-size是设置背景图片的大小
+    cover表示尽可能的完整的呈现图片全貌
+  */
+  background-size: cover;
+  /* 
+    background-repeat表示图片无法覆盖整个页面时是否重复绘制
+    no-repeat表示不要重复绘制
+  */
+  background-repeat: no-repeat;
+  /* 
+    background-position表示图片超过页面大小时显示图片哪个区域
+    center表示中间，也可以具体的像素值的位置
+  */
+  background-position: center center;
+}
+
+/* 局部背景 */
+.bg2 {
+  background-image: url('../images/img30.jpg');
+  background-size: cover;
+
+  /* 
+    局部的背景图片受页面元素大小限制
+    所以需要足够的高宽让背景更完美呈现
+    背景图片的色彩要和字的颜色搭配合适
+  */
+  width: 384px;
+  height: 240px;
+
+  text-align: center;
+  font-size: 3rem;
+  color: #ff0000;
+
+  /*  
+    引用文件的路径说明
+    ./表示在文件所在的文件夹中定位文件
+    ../表示在文件所在位置的上一级定位文件
+  */
+}
