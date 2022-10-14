@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css入门</title>
+
+  <!-- 
+    link标记是导入外部的css文件用的
+    href属性是指定css文件的路径以及名称
+    ./表示当前文件所在的目录（文件夹）
+  -->
+  <link rel="stylesheet" href="./c01.css">
+
+</head>
+
+<body>
+
+
+  <!-- 
+    第一种设置样式的方法，就是元素的style属性
+    也是优先级最高的样式设置方式
+    样式的格式是：
+    样式的名称:样式的值;
+    例如 color:red;表示字的颜色（前景色）是红色
+  -->
+  <span style="color:#ff002b ;">样式入门</span>
+
+  <div class="s01">外部样式文件</div>
+
+  <div class="s02">黑暗骑士</div>
+
+  <hr>
+
+  <!-- 
+    img是导入图片的标记
+      src属性是图片的路径和名称
+      alt表示图片不存在时显示提示文字
+  -->
+  <img class="s03" src="../images/img29.jpg" alt="">
+
+</body>
+
+</html>

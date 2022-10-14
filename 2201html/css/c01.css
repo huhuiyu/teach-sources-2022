@@ -1,0 +1,39 @@
+/* 
+  .类名称 {
+    css样式列表...
+  }
+  .其实是定义class
+  所以页面上的元素通过class="类名称"来匹配样式
+  例如 .abc 定义的样式 页面通过 class="abc"来套用
+  也就是引用的时候不需要.
+*/
+.s01 {
+  /* 
+    background-color是背景色
+    color是前景色
+    #是rgb三原色，格式是#红绿蓝三个数值组成
+    每一个颜色值可以是两位，也可以是一位
+    取值范围是0-f(16进制)
+  */
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.s02 {
+  /*  font-size是字体大小,px是像素 */
+  font-size: 24px;
+  /* 粗体(字体加粗) */
+  font-weight: bold;
+  /* 斜体 */
+  font-style: italic;
+
+  /* 文字对齐方式,center居中，left靠左，right靠右 */
+  text-align: center;
+}
+
+/* C:\Windows\Web\Wallpaper */
+
+.s03 {
+  /* 宽度 */
+  width: 200px;
+}
