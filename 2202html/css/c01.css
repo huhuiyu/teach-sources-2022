@@ -1,0 +1,57 @@
+/* 
+  .类名称 {
+    样式列表...
+  }
+
+  页面通过元素的class属性来匹配类名称来套用样式
+  例如 .abc { ... } 是通过 class="abc"来套用
+  注意：套用的时候不需要.
+
+  样式的格式为：
+  样式名称:样式的值;
+*/
+
+.s01 {
+  /* 颜色（前景色，字的颜色） */
+  color: #0000ff;
+  /* 背景色 */
+  background-color: #ff00ff;
+  /* 
+    #rrggbb是rgb三原色，值是0-f（16进制）
+  */
+  font-size: 32px;
+}
+
+.s02 {
+  /* 文字对齐方式，left左，center中，right右 */
+  text-align: center;
+}
+
+/* 图片样式 */
+.s03 {
+  /* 
+    width是宽度，height是高度 px是像素
+    如果是设置图片的宽高，需要注意图片本身的高宽比
+    如果和图片本身的高宽比不一致会被拉伸变形
+    可以只设置高宽中的一个来确保比例不会失调
+  */
+  width: 200px;
+  height: 200px;
+}
+
+.s04 {
+  /* 背景图片 */
+  background-image: url('../images/img30.jpg');
+  /* 
+    background-size是设置背景图片的大小
+      cover表示尽可能的展示图片的全貌
+  */
+  background-size: cover;
+  /* 
+    background-repeat表示当背景图片无法填满背景的时候
+      是否重复的绘制背景图片，默认是会反复的重绘背景图片
+      no-repeat表示不要重绘
+  */
+  background-repeat: no-repeat;
+
+}
