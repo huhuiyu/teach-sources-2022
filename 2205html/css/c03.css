@@ -1,0 +1,39 @@
+.box01 {
+  /* 盒模型相关样式 */
+
+  /* 
+    border是边框
+    5px表示边框的宽度为5个像素
+    solid表示边框的类型为实线
+    最后一个是边框的颜色
+  */
+  border: 5px solid #ff0000;
+
+  /* 
+    margin是外边距，表示元素和外面的元素分开的距离
+    rem是浏览器基准字体大小的倍数，正常情况下
+    浏览器基准字体大小为16px，但是不同浏览器不一致
+  */
+  margin: 1.5rem;
+  /* 
+    padding是内边距，表示元素里面内容和元素分开的距离
+  */
+  padding: 2rem;
+}
+
+.box02 {
+  border: 1px solid #4f0789;
+  margin: 1rem;
+  padding: 1rem;
+  /* 宽高 */
+  width: 16rem;
+  height: 9rem;
+}
+
+/* 
+  不带.直接写字母表示某一个类型的标记套用样式
+  例如 div { 样式列表... } 表示页面上所有的div都会套用指定样式
+*/
+a {
+  color: #ff0000;
+}
