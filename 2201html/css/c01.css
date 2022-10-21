@@ -36,4 +36,33 @@
 .s03 {
   /* 宽度 */
   width: 200px;
+  /* 高度 */
+  height: 200px;
+  /* 
+  图片最好不要同时设置高宽
+  如果高宽和图片元素的比例不吻合的话会被拉伸显示
+  */
+}
+
+.bg {
+  /* 背景图片设置 */
+  background-image: url('../images/img30.jpg');
+  /* 背景图片大小设置 */
+  background-size: cover;
+  /* 
+  背景无法填满页面时是否重复绘制
+  默认是会重复绘制，no-repeat表示不要重复绘制
+  */
+  background-repeat: no-repeat;
+}
+
+.bg2 {
+  font-size: 3rem;
+  color: #ff0000;
+
+  background-image: url(../images/img28.jpg);
+  background-size: cover;
+
+  width: 32rem;
+  height: 18rem;
 }
