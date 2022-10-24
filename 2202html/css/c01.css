@@ -53,5 +53,21 @@
       no-repeat表示不要重绘
   */
   background-repeat: no-repeat;
+}
 
+.s05 {
+  background-image: url('../images/img33.jpg');
+  background-size: cover;
+
+  font-size: 2rem;
+  color: #ff0000;
+
+  width: 16rem;
+  height: 10rem;
+
+  /* 
+  rem是css3提供新的单位
+  表示浏览器基准字体大小的倍数
+  一般情况下浏览器基准字体大小是16px(但是这是可以被修改的)
+  */
 }
