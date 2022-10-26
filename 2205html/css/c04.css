@@ -1,0 +1,64 @@
+/* 基本的样式 */
+.box {
+  width: 8rem;
+  height: 5rem;
+  margin: 1rem;
+  border: 1px solid #ff0000;
+}
+
+/* 变形一，移动 */
+.tf1 {
+  /* 
+    transform属性就是变形样式
+    translate表示移动位置
+    参数一是从左向右移动的距离
+    参数二是从上向下移动的距离
+    参数的值可以是像素，rem这样的单位，也可以百分比
+    而百分比指的是元素自身大小的百分比，负数是反方向移动
+  */
+  transform: translate(30%, -50%);
+}
+
+.tf2 {
+  /* 
+    rotate是中心旋转，正数是顺时针，负数时逆时针
+    括号里面的时角度值，单位deg
+  */
+  transform: rotate(30deg);
+}
+
+.tf3 {
+  transform: rotate(-45deg);
+}
+
+.tf4 {
+  /* x轴方向的旋转，rotateY是y轴方向 */
+  transform: rotateX(60deg);
+}
+
+.tf5 {
+  /* 
+    scale是缩放,参数是缩放的倍数
+  */
+  transform: scale(1.5);
+}
+
+/* 动画入门 */
+.t1 {
+  color: #00ff00;
+  font-size: 0.8rem;
+  /* 
+    transition是过渡动画效果
+    表示当元素的css样式变化时不是瞬时完成
+    而是在指定的时间内从状态a过渡到状态b
+    参数一是指定要有过渡效果的css样式，例如color
+    也可以是all，表示不论什么属性变化都启用过渡效果
+    参数二是过渡效果的持续时间
+  */
+  transition: all 2s;
+}
+
+.t1:hover {
+  color: #0000ff;
+  font-size: 1.5rem;
+}

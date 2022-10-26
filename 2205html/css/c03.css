@@ -36,4 +36,17 @@
 */
 a {
   color: #ff0000;
+  /* 下方的样式表示让a标记可以支持盒模型相关样式 */
+  display: inline-block;
+  /* 外边距(内边距)支持双参数版本，表示上下/左右 */
+  margin: 0.5rem 1rem;
+  /* 去掉下划线 */
+  text-decoration: none;
+}
+
+/* :hover是鼠标放置在元素上时的效果*/
+a:hover {
+  color: #0000ff;
+  /* 下划线效果 */
+  text-decoration: underline;
 }
