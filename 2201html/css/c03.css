@@ -1,0 +1,35 @@
+/* 基本样式 */
+.box {
+  width: 8rem;
+  height: 5rem;
+  margin: 2rem;
+  border: 1px solid #0000ff;
+}
+
+/* 变形样式 */
+.tf1 {
+  /* 
+    transform是变形的样式
+    translate是移动位置
+    参数一是从左向右移动的距离
+    参数二是从上向下移动的距离
+    负数表示反方向的移动
+    如果参数是百分比，表示是元素自身大小的百分比
+  */
+  transform: translate(50%, -60%);
+}
+
+.tf2 {
+  /* scale是缩放，参数值是缩放比例的倍数 */
+  transform: scale(1.5);
+}
+
+.tf3 {
+  /* rotate是旋转，参数是旋转的角度值，单位是deg */
+  transform: rotate(30deg);
+}
+
+.tf4 {
+  /* 负数时逆时针旋转 */
+  transform: rotate(-45deg);
+}

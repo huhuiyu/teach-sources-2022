@@ -8,4 +8,41 @@
     第三参数是边框的颜色
   */
   border: 5px solid #ff0000;
+  /* 
+  margin是外边距，表示元素和它外面的元素分开的距离
+  简单理解就是外部区域留白
+  rem是浏览器基准字体大小的倍数
+  */
+  margin: 1.5rem;
+  /* padding是内边距 */
+  padding: 2rem;
+  /* 宽高 */
+  width: 16rem;
+  height: 9rem;
+}
+
+/* 
+  超链接样式调整
+  标记名称 {} 表示直接对页面上所有对应标记元素设置样式
+  一般是慎用，因为会影响所有同类型的页面元素 
+*/
+a {
+  font-size: 2rem;
+  color: #ff0000;
+  /* 
+    a，span这类行内元素无法正常处理盒模型样式
+    所以需要下面的样式
+  */
+  display: inline-block;
+  /* 双参数的边距，第一个是上下，第二个是左右 */
+  margin: 1rem 2rem;
+  /* 去掉下划线 */
+  text-decoration: none;
+}
+
+/* 选择器:hover表示鼠标悬停在选择器对应的元素上时的样式 */
+a:hover {
+  background-color: #dcdcdc;
+  /* 添加下划线 */
+  text-decoration: underline;
 }
