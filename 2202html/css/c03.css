@@ -1,0 +1,60 @@
+/* 基本样式 */
+.box {
+  margin: 1rem;
+  width: 8rem;
+  height: 5rem;
+  border: 1px solid #ff0000;
+}
+
+/* 变形效果 */
+.tf1 {
+  /* 
+    transform表示变形的样式
+    translate表示移动位置
+    参数1是从到右的移动距离
+    参数2是从上向下的移动距离
+    负数表示反方向的移动
+    百分比表示元素自身大小的百分比
+  */
+  transform: translate(40%, -50%);
+}
+
+.tf2 {
+  /* scale是缩放，参数是缩放的倍数，可以是小数 */
+  transform: scale(1.5);
+}
+
+.tf3 {
+  transform: scaleX(1.5);
+}
+
+.tf4 {
+  transform: scaleY(1.5);
+}
+
+.tf5 {
+  /* rotate是旋转，参数是旋转的角度，负数是逆时针旋转 */
+  transform: rotate(45deg);
+}
+
+.tf6 {
+  transform: rotateX(-60deg);
+}
+
+/* 动画效果入门 */
+.ani {
+  font-size: 1rem;
+  color: #ff0000;
+  /* 
+  transition表示启用过渡动画
+  过渡表示元素的样式发生变化时是逐渐的演变，而不是直接变化
+  参数一 all表示不论什么样式变化都使用过渡效果
+  参数二 是过渡的总时长
+  */
+  transition: all 1s linear;
+}
+
+.ani:hover {
+  font-size: 2rem;
+  color: #0000ff;
+}

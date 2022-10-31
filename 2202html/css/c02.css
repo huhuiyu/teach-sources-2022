@@ -19,3 +19,28 @@
   width: 32rem;
   height: 18rem;
 }
+
+/* 控制超链接的样式 */
+/* 
+标记名称 {} 表示页面上所有指定标记都会套用的样式
+慎用！！因为影响的范围比较大
+*/
+a {
+  color: #ff0000;
+  /* a标记这种行内元素不支持盒模型，需要下面样式更改 */
+  display: inline-block;
+  /* 内外边距有双参数的版本，表示上下和左右 */
+  margin: 1rem 3rem;
+  /* 去掉下划线 */
+  text-decoration: none;
+}
+
+/*
+选择器:hover {} 表示当鼠标悬停在选择器对应的元素上
+的时候要套用样式（专有词汇叫做伪类）
+*/
+a:hover {
+  text-decoration: underline;
+  color: #0000ff;
+  background-color: #dcdcdc;
+}
