@@ -1,0 +1,155 @@
+/* 基本样式 */
+.s01 {
+  text-align: center;
+  color: #ff0000;
+  font-size: 2rem;
+  /* 
+    animation表示启用关键帧动画
+    参数一是要启动的关键帧动画名称
+    参数二是关键帧动画的持续时间
+    参数三（可选参数）infinite表示无限循环执行动画
+    参数三（可选参数）alternate表示正反交替播放动画
+  */
+  animation: ani1 5s infinite alternate;
+  margin: 3rem;
+}
+
+/* 
+  关键帧动画的定义 
+  @keyframes 动画名称 {
+    动画进度的百分比 {
+      元素的样式...
+    }
+    ...
+  }
+*/
+@keyframes ani1 {
+  0% {
+    font-size: 2rem;
+    color: #ff0000;
+  }
+
+  30% {
+    color: #ffff00;
+  }
+
+  70% {
+    color: #0000ff;
+  }
+
+  100% {
+    font-size: 4rem;
+    color: #ff00ff;
+  }
+}
+
+/* 抖动的特效动画 */
+.s02 {
+  margin: 3rem;
+  border: 1px solid #ff0000;
+  width: 6rem;
+  height: 6rem;
+}
+
+/* 抖动的关键帧动画定义(通过旋转来模拟) */
+@keyframes ani2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(-5deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(5deg);
+  }
+
+  20% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  35% {
+    transform: rotate(5deg);
+  }
+
+  40% {
+    transform: rotate(0deg);
+  }
+  45% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  55% {
+    transform: rotate(5deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+  65% {
+    transform: rotate(-5deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(-5deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  95% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.s02:hover {
+  animation: ani2 0.5s infinite;
+}
+
+.s03 {
+  border: 1px solid #0000ff;
+  padding: 1rem;
+  margin: 2rem;
+  animation: ani3 2s;
+}
+
+/* 滑入效果 */
+@keyframes ani3 {
+  0% {
+    transform: translate(100%, 0%);
+  }
+  80% {
+    transform: translate(-20%, 0%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+/* 
+  关键帧动画可以任意控制动画的时机和任意的css特效组合
+  这个是过渡做不到，所以关键帧才是真正的动画
+  关键帧动画的不同进度的样式可以毫无关联关系，随意搭配
+  关键帧还可以定制执行次数（无限）和反向执行
+*/
