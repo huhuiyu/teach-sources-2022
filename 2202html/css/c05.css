@@ -1,0 +1,19 @@
+/* 基本样式 */
+.box {
+  width: 16rem;
+  margin: 1rem;
+  padding: 5px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+}
+
+.box:hover {
+  border-color: #ff0000;
+}
+
+/* 图片自适应大小 */
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,152 @@
+/* 基本样式 */
+.ani1 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem;
+  color: #ff0000;
+  /* 
+    使用关键帧动画
+    animation: 关键帧动画的名称 动画的持续时间
+    可选参数：infinite是无限循环播放动画
+    alternate是反方向播放动画
+  */
+  animation: dh1 5s infinite alternate;
+}
+
+/* 关键帧动画的定义 */
+/* 
+  @keyframes 关键帧的名称 {
+    
+    动画进度的百分比 {
+      到达指定时间时元素的样式列表...
+    }
+    ...
+  }
+
+*/
+@keyframes dh1 {
+  0% {
+    font-size: 2rem;
+    color: #ff0000;
+  }
+
+  35% {
+    color: #00ff00;
+  }
+
+  65% {
+    color: #00ffff;
+  }
+
+  100% {
+    font-size: 4rem;
+    color: #0000ff;
+  }
+}
+
+/* 抖动效果 */
+.ani2 {
+  margin: 5rem;
+  width: 16rem;
+  height: 9rem;
+  border: 1px solid #ff0000;
+}
+
+.ani2:hover {
+  animation: df2 0.5s infinite;
+}
+
+/* 抖动的关键帧动画定义 */
+@keyframes df2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(10deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(-10deg);
+  }
+
+  20% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  35% {
+    transform: rotate(-10deg);
+  }
+
+  40% {
+    transform: rotate(0deg);
+  }
+  45% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  55% {
+    transform: rotate(-10deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+  65% {
+    transform: rotate(10deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(10deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  95% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* 元素滑入特效 */
+.ani3 {
+  padding: 2rem;
+  font-size: 3rem;
+  color: #ff0000;
+
+  animation: df3 2s;
+}
+
+@keyframes df3 {
+  0% {
+    transform: translate(100%, 0%);
+  }
+
+  80% {
+    transform: translate(-30%, 0%);
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
