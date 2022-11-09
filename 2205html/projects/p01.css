@@ -1,0 +1,58 @@
+body {
+  /* 去掉默认自带的外边距 */
+  margin: 0px;
+  /* 背景图片设置 */
+  background-image: url('../images/img29.jpg');
+  /* 图片尽可能的适应屏幕大小 */
+  background-size: cover;
+}
+
+/* 全局遮罩容器样式 */
+.s01 {
+  /* 半透明的背景颜色 */
+  background-color: rgba(22, 27, 183, 0.6);
+  /* 全屏大小 */
+  width: 100vw;
+  height: 100vh;
+  /* 文字居中 */
+  text-align: center;
+  /* 内边距设置(上右下左四个参数的版本) */
+  padding: 5rem 0px 0px 0px;
+}
+
+/* 主体样式 */
+.s02 {
+  /* 颜色 */
+  color: #fff;
+  /* 大小 */
+  font-size: 5rem;
+  /* 加粗 */
+  font-weight: bold;
+}
+
+/* 单独特别颜色的字 */
+.s03 {
+  color: #d9089e;
+}
+
+/* 副标题样式 */
+.s04 {
+  color: #cbcbcb;
+  font-size: 2rem;
+  /* 留白 */
+  margin: 2rem 0px;
+}
+
+/* 按钮样式 */
+.s05 {
+  /* span元素不能设置盒模型相关样式，需要启用下面的样式 */
+  display: inline-block;
+
+  background-color: #d9089e;
+  color: #dcdcdc;
+  font-size: 1.2rem;
+
+  padding: 1rem 2rem;
+  /* 圆角 */
+  border-radius: 0.5rem;
+}
