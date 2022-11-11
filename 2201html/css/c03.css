@@ -33,3 +33,21 @@
   /* 负数时逆时针旋转 */
   transform: rotate(-45deg);
 }
+
+/* 过渡动画 */
+.tf5 {
+  font-size: 2rem;
+  color: #ff0000;
+  margin: 2rem;
+  /* 
+    transition是过渡动画，表示元素的属性发生变化的时候
+    不是瞬间完成，而已在指定时间内完成从a到b过渡
+  */
+  transition: all 1s;
+}
+
+.tf5:hover {
+  background-color: #00ff00;
+  color: #0000ff;
+  font-size: 3rem;
+}
