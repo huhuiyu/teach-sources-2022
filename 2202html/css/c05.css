@@ -17,3 +17,56 @@ img {
   width: 100%;
   height: auto;
 }
+
+/* 滤镜特效 */
+.s01 {
+  /* filter就是滤镜，blur是模糊效果，参数值越大越模糊 */
+  filter: blur(2px);
+}
+
+.s02 {
+  /* grayscale是灰度特效，100%-0%表示灰度的程度 */
+  filter: grayscale(100%);
+}
+
+.s03 {
+  /* brightness是亮度，值越小越暗，越大越亮 */
+  filter: brightness(2);
+}
+
+.s04 {
+  /* contrast是对比度 */
+  filter: contrast(2.5);
+}
+
+.s05 {
+  width: 10rem;
+  height: 10rem;
+  background-color: #ff0000;
+  color: #fff;
+  margin: 2rem 5rem;
+  /* 切片，clip-path，circle是且成圆 */
+  clip-path: circle(50%);
+}
+
+.s06 {
+  width: 10rem;
+  height: 10rem;
+  background-color: #ff0000;
+  color: #fff;
+  margin: 2rem 5rem;
+  /* 
+    polygon是多边形切片，参数是多边形的顶点坐标（一组）
+    每一个点用逗号分隔，点是xy轴位置组成
+  */
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+
+.s07 {
+  width: 10rem;
+  height: 10rem;
+  background-color: #ff0000;
+  color: #fff;
+  margin: 2rem 5rem;
+  clip-path: polygon(20% 50%, 50% 100%, 80% 50%, 50% 0%);
+}

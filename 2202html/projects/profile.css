@@ -1,0 +1,31 @@
+/* 标记名称 {} 表示页面上对应名称的标记自动套用样式 */
+body {
+  /* 去掉body自带的边距 */
+  margin: 0px;
+  background-image: url('../images/img28.jpg');
+  background-size: cover;
+  /* 背景不会因为页面滚动而移动 */
+  background-attachment: fixed;
+}
+
+/* 全屏幕遮罩（半透明的背景颜色） */
+.s01 {
+  /* vw是浏览器可视区域宽度的百分比,vh是高度的百分比 */
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(5, 89, 153, 0.5);
+}
+
+/* 主标题效果 */
+.s02 {
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bold;
+  padding: 4rem;
+}
+
+.s03 {
+  color: #db1dde;
+}
