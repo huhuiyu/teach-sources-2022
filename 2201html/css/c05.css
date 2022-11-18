@@ -1,0 +1,14 @@
+/* 基本样式 */
+.s01 {
+  width: 10rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid #dcdcdc;
+}
+
+/* 图片自适应 */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

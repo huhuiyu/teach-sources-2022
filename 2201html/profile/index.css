@@ -1,0 +1,55 @@
+body {
+  background-image: url('../images/img28.jpg');
+  background-size: cover;
+
+  margin: 0px;
+}
+
+/* 全屏幕遮罩 */
+.s01 {
+  /* vw是浏览器可视区域宽度的百分比,vh就是高度 */
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(14, 59, 197, 0.5);
+}
+
+.s02 {
+  color: #fff;
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 3rem 0px 0px 0px;
+}
+
+.s03 {
+  color: #c10a9f;
+}
+
+.s04 {
+  color: #dcdcdc;
+  text-align: center;
+  padding: 2rem 0px;
+  font-size: 1.5rem;
+}
+
+.s05 {
+  text-align: center;
+}
+
+.s06 {
+  /* 
+    span这种行内元素不能正确处理盒模型(宽高间距等) 
+    所以需要下面display的样式设置来支持
+  */
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  color: #dcdcdc;
+  background-color: #c10a9f;
+  /* 圆角 */
+  border-radius: 0.5rem;
+}
+
+.s06:hover {
+  cursor: pointer;
+  background-color: #d21baf;
+}
