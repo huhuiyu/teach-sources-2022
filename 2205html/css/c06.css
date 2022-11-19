@@ -1,0 +1,77 @@
+/* 基本样式 */
+.s01 {
+  width: 16rem;
+  margin: 1rem;
+  border: 2px solid #dcdcdc;
+  padding: 2px;
+  /* 圆角 */
+  border-radius: 2px;
+}
+
+/* 图片自适应 */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 滤镜 */
+.s02 {
+  /* filter就是滤镜，blur是模糊，里面参数值越大越模糊 */
+  filter: blur(2px);
+}
+
+.s03 {
+  /* grayscale是灰度，100%全灰度 */
+  filter: grayscale(100%);
+}
+
+.s04 {
+  /* 亮度 */
+  filter: brightness(1.5);
+}
+
+.s05 {
+  /* 对比度 */
+  filter: contrast(3);
+}
+
+.s06 {
+  /* 叠加多个滤镜 */
+  filter: blur(2px) brightness(0.5);
+}
+
+/* 切片效果 */
+.s07 {
+  margin: 5rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: #ff0000;
+  color: #ffffff;
+
+  clip-path: circle(50%);
+}
+
+.s08 {
+  margin: 5rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: #ff0000;
+  color: #ffffff;
+  /* 
+    clip-path表示切片
+    polygon是多边形
+    参数就是坐标点，多个点中间用逗号分开
+    xy坐标中间用空格分开
+  */
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.s09 {
+  margin: 5rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: #ff0000;
+  color: #ffffff;
+  clip-path: polygon(50% 0%, 80% 50%, 50% 100%, 20% 50%);
+}
