@@ -1,0 +1,49 @@
+body {
+  margin: 0px;
+  background-image: url('../images/img29.jpg');
+  background-size: cover;
+  /* 如果无法完整呈现背景图片，就显示中间的部分 */
+  background-position: center;
+  /* 如果背景无法遮罩全屏，是否重复显示,no-repeat表示不需要重复 */
+  background-repeat: no-repeat;
+}
+
+/* 全屏幕遮罩 */
+.s01 {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(36, 2, 156, 0.6);
+  text-align: center;
+}
+
+/* 主标题部分 */
+.s02 {
+  /* 上内边距 */
+  padding-top: 10vh;
+  font-size: 3rem;
+  color: #fff;
+}
+
+/* 
+  选择器a 选择器b {}
+  表示选择器a里面的选择器b
+  例如.s02 span
+  表示class为s02里面的span元素套用样式
+*/
+.s02 span {
+  color: #db1dde;
+}
+
+.s03 {
+  padding: 2rem 0px;
+  color: #dcdcdc;
+  font-size: 1rem;
+}
+
+.s04 {
+  display: inline-block;
+  background-color: #db1dde;
+  color: #dcdcdc;
+  padding: 1rem 1.5rem;
+  border-radius: 0.2rem;
+}

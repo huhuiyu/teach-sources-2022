@@ -29,3 +29,26 @@ body {
 .s03 {
   color: #db1dde;
 }
+
+/* 副标题效果 */
+.s04 {
+  text-align: center;
+  padding: 2rem 0px;
+  color: #dcdcdc;
+  font-size: 1.5rem;
+}
+
+/* 按钮相关 */
+.s05 {
+  text-align: center;
+}
+
+.s06 {
+  /* span是行内元素，无法正确处理盒模型相关样式，所以需要下面 */
+  display: inline-block;
+  background-color: #db1dde;
+  color: #dcdcdc;
+  padding: 1rem 1.5rem;
+  /* 圆角 */
+  border-radius: 0.5rem;
+}
