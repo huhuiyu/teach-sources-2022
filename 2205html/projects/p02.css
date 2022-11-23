@@ -1,0 +1,59 @@
+body {
+  margin: 0px;
+  background-image: url('../images/img29.jpg');
+  background-size: cover;
+  /* 背景无法填满是是否重复显示，no-repeat表示不要重复显示 */
+  background-repeat: no-repeat;
+  /* 背景无法完整填满时显示图片的区域 */
+  background-position: center center;
+}
+
+.s01 {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-color: rgba(9, 60, 198, 0.5);
+}
+
+.s02 {
+  font-size: 3rem;
+  /* 上内边距 */
+  padding-top: 5rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* 
+  选择器a 选择器b {}
+  表示选择器a里面的选择器b，注意，中间的空格不能省略！！！！
+  .s02 span {}
+  表示class="s02"的元素里面的span元素
+*/
+.s02 span {
+  color: #e018ae;
+}
+
+.s03 {
+  padding: 3rem;
+  color: #dcdcdc;
+  font-size: 1.5rem;
+  animation: kfc 2s infinite alternate;
+}
+
+.s04 {
+  display: inline-block;
+  background-color: #e018ae;
+  color: #dcdcdc;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
+
+@keyframes kfc {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
