@@ -1,9 +1,10 @@
 /* 基本样式 */
 .s01 {
-  width: 10rem;
+  width: 25rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
   border: 2px solid #dcdcdc;
+  margin: 1rem;
 }
 
 /* 图片自适应 */
@@ -11,4 +12,91 @@ img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+/* 
+  filter就是滤镜效果
+*/
+
+.s02 {
+  /* blur是模糊，参数值越大越模糊 */
+  filter: blur(2px);
+}
+
+.s03 {
+  /* grayscale是灰度，值越大颜色越接近黑白 */
+  filter: grayscale(100%);
+}
+
+.s04 {
+  /* brightness是亮度，越大越亮，越小越暗 */
+  filter: brightness(1.5);
+}
+
+.s05 {
+  /* contrast对比度 */
+  filter: contrast(1.5);
+}
+
+/* 切片的部分 */
+.s06 {
+  margin: 2rem;
+  width: 15rem;
+  height: 15rem;
+  background-color: #ff0000;
+
+  /* 
+    clip-path是切片
+    polygon是多边形切片，参数是多边形的顶点
+    点是x轴和y轴的位置定义，多个点用,逗号分开
+  */
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.s07 {
+  margin: 2rem;
+  width: 15rem;
+  height: 15rem;
+  background-color: #ff0000;
+
+  clip-path: polygon(50% 0%, 80% 50%, 50% 100%, 20% 50%);
+}
+
+.s08 {
+  margin: 2rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: #ff0000;
+  /* 圆形切片 */
+  clip-path: circle(50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.s09 {
+  margin: 2rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: #ff0000;
+  /* 圆形切片 */
+  clip-path: polygon(
+    50% 0%,
+    65% 40%,
+    100% 40%,
+    70% 60%,
+    85% 100%,
+    50% 75%,
+    15% 100%,
+    30% 60%,
+    0% 40%,
+    35% 40%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }
