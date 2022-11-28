@@ -1,0 +1,85 @@
+body {
+  margin: 0px;
+  height: 2000px;
+}
+/* 基本样式 */
+.s01 {
+  width: 16rem;
+  height: 9rem;
+  border: 1px solid #ff0000;
+}
+
+/* 固定定位 */
+.s02 {
+  position: fixed;
+  right: 1rem;
+  bottom: 5rem;
+}
+
+/* 绝对定位 */
+.s03 {
+  border: 1px solid #0000ff;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+/* 
+固定定位和绝对定位都会脱离文档流（简单理解为不受它上一级的元素约束）
+区别点是固定定位不受页面滚动的影响，始终在指定的位置显示
+*/
+
+/* 绝对定位和相对定位容器 */
+.s04 {
+  width: 50rem;
+  height: 50rem;
+  border: 1px solid #0000ff;
+  /* 
+    relative定位表示里面的绝对定位是相对于本容器
+    一般情况下，绝对定位一定会搭配相对定位使用
+   */
+  position: relative;
+}
+
+.s05 {
+  width: 10rem;
+  height: 10rem;
+  background-color: #ff0000;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  /* 
+  如果元素位置重叠了，可以通过z-index属性控制层次
+  值越高的元素越靠前
+  */
+  z-index: 10;
+}
+
+.s06 {
+  width: 10rem;
+  height: 10rem;
+  background-color: #ffff00;
+  position: absolute;
+  left: 5rem;
+  top: 5rem;
+}
+
+.s07 {
+  width: 10rem;
+  height: 10rem;
+  background-color: #ff00ff;
+  position: absolute;
+  left: 9rem;
+  top: 9rem;
+}
+
+.s05:hover {
+  z-index: 20;
+}
+
+.s06:hover {
+  z-index: 20;
+}
+
+.s07:hover {
+  z-index: 20;
+}
