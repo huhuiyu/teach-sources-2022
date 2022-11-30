@@ -1,0 +1,90 @@
+body {
+  margin: 0px;
+  height: 3000px;
+}
+
+/* 基本样式 */
+.s01 {
+  width: 8rem;
+  height: 5rem;
+  border: 1px solid #ff0000;
+}
+
+/* 固定位置样式 */
+.s02 {
+  /* position:fixed表示固定位置 */
+  position: fixed;
+  /* top,right,bottom,left四个属性控制位置 */
+  right: 1rem;
+  bottom: 3rem;
+}
+
+/* 绝对定位 */
+.s03 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: 1px solid #0000ff;
+}
+
+/* 
+  绝对定位和固定定位都会脱离文档流（不占用原位置）移动位置
+  固定定位不会收到页面滚动的影响，始终会显示在指定的位置
+*/
+
+/* 对绝对定位元素的约束 */
+.s04 {
+  margin: 2rem;
+  width: 25rem;
+  height: 20rem;
+  border: 1px solid #0000ff;
+  /* 
+  position: relative;是约束它里面的绝对定位元素的
+  位置移动是要参考本元素，正常情况下，绝对定位一定会搭配一个相对定位的容器
+  */
+  position: relative;
+}
+
+.s05 {
+  width: 8rem;
+  height: 7rem;
+  background-color: #ff0000;
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  /* 
+    z-index是当页面元素的位置重叠的时候，决定遮挡次序的样式
+    值越大的元素越靠前
+  */
+  z-index: 10;
+}
+
+.s06 {
+  width: 8rem;
+  height: 7rem;
+  background-color: #ff00ff;
+  position: absolute;
+  top: 4rem;
+  left: 5rem;
+}
+
+.s07 {
+  width: 8rem;
+  height: 7rem;
+  background-color: #ffff00;
+  position: absolute;
+  top: 7rem;
+  left: 8rem;
+}
+
+.s05:hover {
+  z-index: 20;
+}
+
+.s06:hover {
+  z-index: 20;
+}
+
+.s07:hover {
+  z-index: 20;
+}
