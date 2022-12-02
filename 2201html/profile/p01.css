@@ -3,4 +3,53 @@ body {
 
   background-image: url('../images/img28.jpg');
   background-size: cover;
+  /* 背景不要重复 */
+  background-repeat: no-repeat;
+  /* 如果背景无法全部显示，那么只显示图片中间的区域 */
+  background-position: center center;
+}
+
+/* 全屏容器 */
+.s01 {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(12, 38, 167, 0.5);
+  text-align: center;
+}
+
+/* 主标题 */
+.s02 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+
+/* 主标题的符号样式 */
+/* 
+  选择器a 选择器b {}表示匹配选择器a的元素里面选择器b元素
+  例如： .s02 span表示class为s02的元素里面的span元素
+  注意！！！！！空格就表示里面的
+*/
+.s02 span {
+  color: #df2595;
+}
+
+/* 副标题 */
+.s03 {
+  color: #dcdcdc;
+  font-size: 1.2rem;
+  padding: 2rem 0px;
+}
+
+/* 作品按钮 */
+.s04 {
+  /* span这种行内元素需要下面样式才能支持盒模型 */
+  display: inline-block;
+  background-color: #df2595;
+  color: #dcdcdc;
+  padding: 1rem 1.5rem;
+  /* 圆角 */
+  border-radius: 0.5rem;
 }
