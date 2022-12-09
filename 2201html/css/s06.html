@@ -19,6 +19,46 @@
     固定定位效果
   </div>
 
+  <div class="s01">
+    绝对定位
+    <div class="s03">绝对定位元素</div>
+    黑暗骑士
+  </div>
+
+  <hr>
+
+  <div class="s04">
+    <div class="s06">1111</div>
+    <div class="s07">2222</div>
+    <div class="s08">3333</div>
+  </div>
+
+  <hr>
+
+  <!-- 视频效果 -->
+  <div class="s09">
+    <!-- video是视频标记，src属性是视频文件的地址 -->
+    <video id="v01" controls src="https://klcxy.top/oss-manage-service/ossinfo/queryOssUrl?tbOssInfo.oiid=399"></video>
+    <div id="v02" class="s10">播放</div>
+
+  </div>
+
+
+  <script>
+    let playing = false
+    let v01 = document.getElementById('v01');
+    let v02 = document.getElementById('v02');
+
+    v02.addEventListener('click', () => {
+      if (playing) {
+        v01.play();
+      } else {
+        v01.pause();
+      }
+      playing = !playing;
+    });
+
+  </script>
 
 </body>
 

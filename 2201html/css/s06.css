@@ -1,5 +1,7 @@
 body {
   margin: 0px;
+
+  height: 2000px;
 }
 
 /* 基本样式 */
@@ -18,4 +20,109 @@ body {
   position: fixed;
   right: 1rem;
   bottom: 3rem;
+}
+
+/* 绝对定位 */
+.s03 {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+/* 
+固定定位和绝对定位都会脱离文档流移动位置
+*/
+
+/* 通过容器约束绝对定位 */
+.s04 {
+  border: 1px solid #ff0000;
+  width: 25rem;
+  height: 15rem;
+  margin: 1rem;
+  /* 
+    absolute绝对定位一般都会搭配父元素的relative定位
+    表示绝对定位的坐标是以父元素的坐标作为参考
+  */
+  position: relative;
+}
+
+.s06 {
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  width: 8rem;
+  height: 5rem;
+  background-color: #00ff00;
+  /* 
+    z-index是当元素重叠的时候所在层次
+    值越大的元素越靠前
+   */
+  z-index: 5;
+}
+
+.s07 {
+  position: absolute;
+  top: 4rem;
+  left: 5rem;
+  width: 8rem;
+  height: 5rem;
+  background-color: #ff00ff;
+}
+
+.s08 {
+  position: absolute;
+  top: 7rem;
+  left: 4rem;
+  width: 8rem;
+  height: 5rem;
+  background-color: #0000ff;
+}
+
+.s06:hover {
+  z-index: 10;
+}
+
+.s07:hover {
+  z-index: 10;
+}
+
+.s08:hover {
+  z-index: 10;
+}
+
+.s09 {
+  width: 35rem;
+  position: relative;
+  margin: 2rem;
+}
+
+video {
+  width: 100%;
+}
+
+.s10 {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 2;
+  color: #dcdcdc;
+  background-color: rgba(64, 64, 64, 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  /* opacity是不透明度，0是完全透明，1就是完全不透 */
+  opacity: 0;
+  transition: all 1s;
+}
+
+/* 
+  选择器a 选择器b 表示选择器a里面的选择器b
+  例如 .s09 video 表示class="s09"的元素里面的video
+  注意！！！！也就是多个选择器中间的空格带有寓意，表示里面的
+
+  .s09:hover .s10 表示当鼠标悬停在class为s09的元素上时，它里面的
+  class为s10的元素套用样式
+*/
+.s09:hover .s10 {
+  opacity: 1;
+  cursor: pointer;
 }
