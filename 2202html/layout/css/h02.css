@@ -1,0 +1,37 @@
+.s01 {
+  margin: 2rem;
+  width: 25rem;
+  /* 绝对定位的容器要设置相对定位 */
+  position: relative;
+}
+
+video {
+  width: 100%;
+}
+
+.s02 {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: rgba(212, 26, 172, 0.6);
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  /* opacity是不透明度，0-1之间，越小就透明 */
+  opacity: 0;
+  /* 过渡动画 */
+  transition: all 1s;
+  cursor: pointer;
+}
+
+/* 
+  选择器a 选择器b 表示：匹配选择器a的元素里面的选择器b元素
+  例如 .abc span{}
+  表示class="abc"的元素里面span元素
+
+  .s01:hover .s02 
+  表示当鼠标在class="s01"的时候它里面的class="s02"的元素套用样式
+*/
+.s01:hover .s02 {
+  opacity: 1;
+}

@@ -51,8 +51,10 @@
 
     v02.addEventListener('click', () => {
       if (playing) {
+        v02.innerHTML = '暂停';
         v01.play();
       } else {
+        v02.innerHTML = '播放';
         v01.pause();
       }
       playing = !playing;

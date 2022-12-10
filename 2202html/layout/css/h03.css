@@ -1,0 +1,13 @@
+.s01 {
+  border: 1px solid #ff0000;
+  padding: 1rem;
+  margin: 5px;
+}
+
+.s02 {
+  /* 
+    display: flex表示设置容器为压力盒子
+    效果是将里面的第一级子元素压迫在一行上显示
+  */
+  display: flex;
+}

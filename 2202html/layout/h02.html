@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/h02.css">
+</head>
+
+<body>
+
+  <div class="s01">
+    <!-- 
+      video是嵌入视频的标记，src值是视频的链接地址
+      controls是显示播放控制界面
+    -->
+    <video id="e02" controls src="https://klcxy.top/oss-manage-service/ossinfo/queryOssUrl?tbOssInfo.oiid=399"></video>
+    <div id="e01" class="s02">播放</div>
+
+  </div>
+
+  <script>
+    let e01 = document.getElementById('e01');
+    let e02 = document.getElementById('e02');
+    let control = false;
+    e01.addEventListener('click', () => {
+      if (control) {
+        e02.pause();
+        e01.innerHTML = '播放';
+      } else {
+        e02.play();
+        e01.innerHTML = '暂停';
+      }
+      control = !control;
+
+    });
+
+
+  </script>
+
+
+</body>
+
+</html>
