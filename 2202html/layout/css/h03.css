@@ -11,3 +11,63 @@
   */
   display: flex;
 }
+
+.s03 {
+  display: flex;
+  /* 
+    一级子元素的水平对齐方式justify-content
+    space-between表示分散对齐，一般用于左右/左中右布局或者平均分散
+  */
+  justify-content: space-between;
+}
+
+.s04 {
+  display: flex;
+  /* 将空白平均分配给每一个元素的两侧 */
+  justify-content: space-around;
+}
+
+.s05 {
+  display: flex;
+  /* 将空白平均分配，每一个元素之间的空白相等 */
+  justify-content: space-evenly;
+}
+
+/* 
+  注意事项！！！！！！flex布局只会对第一级的子元素有效
+*/
+
+/* 
+  容器布局
+*/
+.s06 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border: 1px solid #ff0000;
+}
+
+.s07 {
+  font-weight: bold;
+}
+
+.s08 {
+  /* span这类行内元素需要设置下面样式才能正确设置盒模型相关样式 */
+  display: inline-block;
+  margin: 0px 0.5rem;
+}
+
+.s08:hover {
+  color: #1cd1e9;
+  cursor: pointer;
+}
+
+.s09 {
+  color: #1cd1e9;
+}
+
+.s10 {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0px;
+}
