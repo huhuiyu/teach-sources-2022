@@ -1,0 +1,59 @@
+/* 基本的样式 */
+.s01 {
+  margin: 5px;
+  padding: 1rem;
+  border: 1px solid #ff0000;
+}
+
+/* 压力盒子 */
+.s02 {
+  /* 
+    display: flex;就是压力盒子显示模式
+    会强制将里面的第一级的子元素压迫成一行显示
+  */
+  display: flex;
+}
+
+.s03 {
+  display: flex;
+  /* 
+    justify-content是水平对齐方式
+    space-between是分散对齐
+  */
+  justify-content: space-between;
+}
+
+.s04 {
+  display: flex;
+  /* 
+    space-around是将空白区域平均分配到每一个子元素两侧
+  */
+  justify-content: space-around;
+}
+
+/* 实际页面应用效果 */
+.s05 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.s06 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.s07 {
+  /* 行内元素设置盒模型的必要样式 */
+  display: inline-block;
+  margin: 0px 1rem;
+}
+
+.s07:hover {
+  color: #27e2f7;
+  cursor: pointer;
+}
+
+.s08 {
+  color: #27e2f7;
+}
