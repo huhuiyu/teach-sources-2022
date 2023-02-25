@@ -1,0 +1,17 @@
+/* 调整svg的大小 */
+.svg-icon {
+  width: 3rem;
+  height: auto;
+}
+
+/* 样式版本的iconfont可以搭配css使用！！ */
+.icon1 {
+  font-size: 5rem;
+  display: inline-block;
+  margin: 5px;
+  color: #00ff00 ;
+}
+
+.icon1:hover {
+  color: #ff0000;
+}
