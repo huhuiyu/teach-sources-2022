@@ -1,0 +1,15 @@
+/* svg图标可以套用样式修改大小 */
+.icon {
+  width: 3rem;
+  height: auto;
+}
+
+/* 字体图标的样式定制 */
+.icon1 {
+  font-size: 3rem;
+  color: #ff0000;
+}
+
+.icon1:hover {
+  color: #ff00ff;
+}
