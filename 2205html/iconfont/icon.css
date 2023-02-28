@@ -1,0 +1,13 @@
+.icon {
+  width: 5rem;
+  height: auto;
+}
+
+.icon1 {
+  font-size: 3rem;
+  color: #ff0000;
+}
+
+.icon1:hover {
+  color: #ff00ff;
+}
