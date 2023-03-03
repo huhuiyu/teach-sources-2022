@@ -1,0 +1,37 @@
+.a1 {
+  border: 1px solid #ff0000;
+  margin: 1rem;
+}
+
+/* 压力布局 */
+.a2 {
+  display: flex;
+}
+
+/* 水平对齐方式 */
+.a3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.a4 {
+  display: flex;
+  /* start end center */
+  justify-content: flex-end;
+}
+
+.a5 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.a6 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.a7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

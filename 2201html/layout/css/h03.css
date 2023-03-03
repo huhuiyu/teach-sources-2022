@@ -1,0 +1,35 @@
+.a1 {
+  border: 1px solid #ff00ff;
+  margin: 0.5rem;
+}
+.a2 {
+  display: flex;
+}
+
+/* 
+  选择器1 > 选择器2
+  表示选择器1里面的第一级的选择器2
+  .a2 > div 表示
+  class为a2的元素里面的第一级的div
+  :first-of-type表示第一个元素，类型是伪类前面的值
+  例如:span:first-of-type，表示第一个span
+*/
+.a2 > div:first-of-type {
+  flex: 3;
+}
+
+/* :last-of-type 表示最后一个 */
+.a2 > div:last-of-type {
+  flex: 6;
+}
+
+/* :nth-child(n) 表示第n个子元素*/
+.a2 > div:nth-child(2) {
+  flex: 1;
+}
+
+/* 
+flex是压力盒子的一级子元素的特殊属性
+值越大分配的空间也就越大
+如果子元素只有一个设置了该属性，那么该元素会占满所有剩余空间
+*/

@@ -1,0 +1,13 @@
+body {
+  margin: 0px;
+}
+
+.a1 {
+  width: 100vw;
+  height: 100vh;
+  background-color: #00ffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
