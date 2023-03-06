@@ -1,0 +1,66 @@
+.a01 {
+  margin: 1rem;
+  border: 1px solid #ff0000;
+}
+
+/* 压力盒子 */
+.a02 {
+  display: flex;
+}
+
+.a03 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.a04 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.a05 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.a06 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.a07 {
+  display: flex;
+}
+
+/* 
+  选择器a > 选择器b
+  表示选择器a中第一级的选择器b
+  例如 .aaa > span 表示 class为aaa的元素里面的第一级span元素
+  :first-of-type表示指定类型的元素中的第一个
+  div:first-of-type表示第一个div
+  flex为压力布局的一级子元素特有的属性，该值越大占用空间越大
+  如果一个子元素设置了flex，不论值的大小，该元素都会占满所有剩余的空间
+*/
+.a07 > div:first-of-type {
+  flex: 3;
+}
+/* :last-of-type，指定类型的元素中的最后一个 */
+.a07 > div:last-of-type {
+  flex: 2;
+}
+/* :nth-child(n) 元素中的第n个  */
+.a07 > div:nth-child(2) {
+  flex: 1;
+}
+
+.a08 {
+  display: flex;
+  /* 交叉轴（垂直）对齐 */
+  align-items: center;
+  justify-content: center;
+}
+
+.a09 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}

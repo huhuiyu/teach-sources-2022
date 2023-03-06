@@ -1,0 +1,18 @@
+body {
+  margin: 0px;
+}
+
+.full-page {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-page > div {
+  border: 1px solid #ff0000;
+  padding: 2rem;
+  border-radius: 1rem;
+}
