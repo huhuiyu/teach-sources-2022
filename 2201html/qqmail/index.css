@@ -1,0 +1,84 @@
+body {
+  margin: 0px;
+}
+
+/* 最上方是左边logo，右边菜单 */
+.a01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eff4fa;
+  border-bottom: 1px solid #d6dfea;
+  padding: 0.5rem 1.5rem;
+}
+
+a {
+  color: #1d5494;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 
+  选择器a 选择器b 表示选择器a里面的（任意级别）的选择器b
+  和 > 的区别是 >只能找到第一级的，所有>更加常用
+  例如 .aaa div表示找到class为aaa的元素里面的所有的div
+*/
+.a01 span {
+  color: #777;
+  font-size: 0.8rem;
+}
+
+/* 最下方的菜单 */
+.a02 {
+  text-align: center;
+  background-color: #eff4fa;
+  border-top: 1px solid #d6dfea;
+  padding: 0.5rem;
+  /* 固定到下方 */
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+
+.a02 span {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.a03 span {
+  /* 行内元素需要设置下面的属性，才能支持盒模型样式 */
+  display: inline-block;
+  margin: 0px 0.5rem;
+}
+
+.a03 span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* 中间区域的整体布局 */
+.a04 {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+}
+.a04 > div:first-of-type {
+  flex: 6;
+  /* 左边要靠右 */
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+.a04 > div:last-of-type {
+  flex: 4;
+  display: flex;
+}
+
+.a05 {
+  border: 1px solid #a0b1c4;
+}
