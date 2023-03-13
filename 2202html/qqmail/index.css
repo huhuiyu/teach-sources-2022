@@ -1,0 +1,96 @@
+body {
+  margin: 0px;
+}
+
+.a01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eff4fa;
+  padding: 1rem;
+  border-bottom: 1px solid #d6dfea;
+}
+
+a {
+  color: #1d5494;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 
+  选择器a 空格 选择器b 表示 a里面的b（不论多少级）
+  例如 .test div 表示class为test里面的所有的div
+*/
+.a01 span {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.a02 {
+  padding: 1rem;
+  background-color: #eff4fa;
+
+  border-top: 1px solid #d6dfea;
+
+  text-align: center;
+  /* 固定定位 */
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.a02 span {
+  color: #999;
+  font-size: 0.8rem;
+}
+
+.a03 a {
+  color: #999;
+  /* 行内元素要设置下面的样式才能正确处理盒模型的样式 */
+  display: inline-block;
+  margin: 0px 0.5rem;
+}
+
+.a04 {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.a04 > div:first-of-type {
+  flex: 6;
+  /* 靠右 */
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+
+.a04 > div:last-of-type {
+  flex: 4;
+}
+
+.a05 {
+  display: flex;
+}
+
+.a05 > div {
+  border: 1px solid #d6dfea;
+  border-radius: 5px;
+}
+
+.a06 {
+  padding: 1rem 0px;
+  background-color: #eff4fa;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #d6dfea;
+}
+
+.a07 {
+  padding: 3rem 1rem;
+}
