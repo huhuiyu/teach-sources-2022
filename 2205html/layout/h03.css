@@ -1,0 +1,34 @@
+body {
+  margin: 0px;
+}
+
+.a01 {
+  margin: 1rem;
+  border: 1px solid #ff00ff;
+}
+
+.a02 {
+  display: flex;
+}
+
+/* 
+  选择器a > 选择器b
+  表示a里面的第一级b
+  例如 .aaa > span 表示class为aaa的元素里面的第一级的span元素
+  :first-of-type表示指定类型中的第一个
+  flex是压力布局子元素的特有属性
+  该值越大分配的屏幕空间也就越大
+*/
+.a02 > div:first-of-type {
+  flex: 4;
+}
+
+/* :last-of-type指定类型最后一个  */
+.a02 > div:last-of-type {
+  flex: 2;
+}
+
+/* :nth-child(n) 表示第n个元素  */
+.a02 > div:nth-child(2) {
+  flex: 1;
+}

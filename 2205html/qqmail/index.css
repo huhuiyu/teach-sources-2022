@@ -1,0 +1,29 @@
+body {
+  margin: 0px;
+}
+
+/* 头部区域，左边logo，右边菜单，分散对齐 */
+.a01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #eff4fa;
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid #d6dfea;
+}
+
+a {
+  color: #1d5494;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.a01 span {
+  font-size: 0.8rem;
+  color: #999;
+}
