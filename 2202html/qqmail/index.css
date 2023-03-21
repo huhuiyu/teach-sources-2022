@@ -89,8 +89,68 @@ a:hover {
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid #d6dfea;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 .a07 {
   padding: 3rem 1rem;
+}
+
+.a08 {
+  padding: 0.5rem;
+  border: 1px solid #dcdcdc;
+  width: 15vw;
+  margin-bottom: 0.5rem;
+}
+
+.a08 > input {
+  outline: none;
+  border-width: 0px;
+  width: 100%;
+}
+
+/* :focus-within表示该元素或者它里面的任意子元素获取到焦点的时候 */
+.a08:focus-within {
+  border-color: #1d5494;
+}
+
+.a09 {
+  background-color: #328df5;
+  color: #fff;
+  padding: 0.6rem 0px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 1.5rem 0px;
+}
+
+.a09:hover {
+  background-color: #599eed;
+  cursor: pointer;
+}
+
+.a10 > label {
+  display: flex;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.a10 {
+  margin: 3rem 0px 0.5rem 0px;
+}
+
+.a11 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.a11 span {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.a11 svg {
+  width: 0.8rem;
+  height: auto;
 }

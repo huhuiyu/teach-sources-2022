@@ -1,0 +1,30 @@
+body {
+  margin: 0px;
+  color: #fff;
+  background-color: #000;
+}
+
+/* 下方固定 */
+.c01 {
+  position: fixed;
+  bottom: 0px;
+  background-color: #222;
+  width: 100%;
+  height: 2rem;
+}
+
+/* 上方固定 */
+.a01 {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 1.2rem;
+  z-index: 2;
+  background-color: #000;
+}
+
+/* 中间区域 */
+.b01 {
+  margin-top: 1.2rem;
+  margin-bottom: 2rem;
+}
