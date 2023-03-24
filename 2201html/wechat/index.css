@@ -1,0 +1,119 @@
+body {
+  margin: 0px;
+  background-color: #000;
+  color: #fff;
+}
+
+/* 整体上中下布局 */
+.a01 {
+  display: flex;
+  /* 布局修改成竖向 */
+  flex-direction: column;
+  height: 100vh;
+}
+/* 中间区域填满 */
+.a01 > div:nth-of-type(2) {
+  flex: 1;
+}
+
+/* 最上方的菜单样式 */
+.a02 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+}
+
+.a02 svg {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.a03 {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 0px;
+  background-color: #222;
+}
+
+.a03 > div {
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.a03 svg:last-of-type {
+  display: inline-block;
+  height: 28px;
+  width: auto;
+}
+
+.a04 {
+  display: flex;
+  padding: 0.5rem 1rem;
+  align-items: center;
+}
+
+.a04 svg {
+  display: block;
+  height: 100%;
+  width: auto;
+}
+
+.a04 > div:first-of-type {
+  height: 3rem;
+}
+
+.a04 > div:nth-of-type(2) {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.a04 > div:last-of-type {
+  width: 4rem;
+}
+
+.a05 {
+  text-align: right;
+  color: #8a8a8a;
+  font-size: 0.7rem;
+}
+
+.a05 svg {
+  display: inline-block;
+  width: 0.8rem;
+  height: auto;
+  margin-top: 0.3rem;
+}
+
+.a06 {
+  color: #8a8a8a;
+  font-size: 0.7rem;
+  /* 超出的部分不要显示 */
+  overflow: hidden;
+  /* 文字溢出显示省略号 */
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.a07 {
+  /* 超出的部分不要显示 */
+  overflow: hidden;
+  /* 文字溢出显示省略号 */
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+
+  margin-bottom: 0.3rem;
+}
+
+.active {
+  background-color: #222;
+}
+
+.line {
+  background-color: #8a8a8a;
+  height: 1px;
+}
