@@ -8,9 +8,14 @@ body {
 .c01 {
   position: fixed;
   bottom: 0px;
-  background-color: #222;
+  background-color: #111;
   width: 100%;
-  height: 2rem;
+  height: 4rem;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 0.8rem;
+  align-items: center;
 }
 
 /* 上方固定 */
@@ -21,10 +26,79 @@ body {
   height: 1.2rem;
   z-index: 2;
   background-color: #000;
+  display: flex;
+  padding: 0.5rem 0rem;
+  justify-content: space-between;
+}
+
+.a01 svg {
+  display: inline-block;
+  margin-right: 0.5rem;
 }
 
 /* 中间区域 */
 .b01 {
-  margin-top: 1.2rem;
-  margin-bottom: 2rem;
+  margin-top: 2.2rem;
+  margin-bottom: 4rem;
+}
+
+.b02 {
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+}
+
+.b03 {
+  flex: 1;
+}
+
+.b04 {
+  width: 3rem;
+  border: 1px solid #dcdcdc;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  margin-right: 0.5rem;
+}
+
+.b04 svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.b05 {
+  color: #dcdcdc;
+  text-align: right;
+  font-size: 0.8rem;
+  width: 6rem;
+}
+
+.b05 > div:first-of-type {
+  margin-bottom: 0.5rem;
+}
+
+.b03 > div:last-of-type {
+  color: #999;
+  font-size: 0.8rem;
+  /* 文字超出的时候显示省略号 */
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+
+  margin-top: 0.5rem;
+}
+
+.b03 > div:first-of-type {
+  /* 文字超出的时候显示省略号 */
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.active {
+  background-color: #333;
 }
