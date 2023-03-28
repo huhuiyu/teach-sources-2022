@@ -94,4 +94,74 @@ a:hover {
   border: 1px solid #dcdcdc;
   padding: 0.5rem;
   width: 15vw;
+  margin-bottom: 1rem;
+}
+
+.a08 > input {
+  border-width: 0px;
+  outline: none;
+  width: 100%;
+}
+
+/* 
+:focus-within伪类表示当元素或者它里面的元素拥有焦点的时候
+*/
+.a08:focus-within {
+  border-color: #5a98de;
+}
+
+/* ::placeholder伪元素，表示输入框中的提示文本 */
+.a08 > input::placeholder {
+  color: #dcdcdc;
+}
+
+.a08:focus-within > input::placeholder {
+  color: #999;
+}
+
+.a09 {
+  background-color: #5a98de;
+  color: #fff;
+  text-align: center;
+  margin: 1.5rem 0px;
+  padding: 0.5rem 0px;
+  border-radius: 4px;
+}
+
+.a09:hover {
+  background-color: #6ba9ef;
+  cursor: pointer;
+}
+
+.a10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: 2rem;
+}
+
+.a10 span {
+  display: inline-block;
+  transform: translateY(3px);
+}
+
+.a10 input {
+  transform: translateY(2px);
+}
+
+.a11 {
+  margin: 1rem 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.a11 > span {
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+.a11 svg {
+  transform: translateY(2px);
 }
