@@ -2,6 +2,7 @@ body {
   margin: 0px;
   background-color: #000;
   color: #fff;
+  overflow: hidden;
 }
 
 /* 整体上中下布局 */
@@ -14,6 +15,7 @@ body {
 /* 中间区域填满 */
 .a01 > div:nth-of-type(2) {
   flex: 1;
+  overflow: auto;
 }
 
 /* 最上方的菜单样式 */
