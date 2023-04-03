@@ -1,3 +1,109 @@
 body {
   margin: 0px;
+  background-color: #000;
+  color: #dcdcdc;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container > div:nth-of-type(2) {
+  flex: 1;
+}
+
+.a1 {
+  display: flex;
+  background-color: #111;
+  padding: 0.5rem;
+}
+
+.a1 img {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.a1 svg {
+  display: inline-block;
+  height: 1.5rem;
+  width: auto;
+}
+
+.a1 > div:nth-of-type(1) {
+  flex: 1;
+  display: flex;
+  margin: 0px 1rem;
+  background-color: #222;
+  border-radius: 1.5rem;
+  padding: 0px 0.7rem;
+}
+
+.a1 input {
+  background-color: #222;
+  border-width: 0px;
+  outline: none;
+  margin-left: 0.5rem;
+  width: 100%;
+}
+
+.a1 > div:nth-of-type(1) svg {
+  height: 1.2rem;
+  transform: translateY(0.3rem);
+}
+
+.a2 {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.2rem 0px;
+  background-color: #111;
+}
+
+.a2 svg {
+  display: inline-block;
+  height: 1.5rem;
+  width: auto;
+}
+
+.a2 .active {
+  color: #db3a50;
+  border-bottom: 2px solid #db3a50;
+  /* top bottom left right  */
+}
+
+.a3 {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.8rem;
+  text-align: center;
+  background-color: #111;
+  padding: 0.2rem 0px;
+}
+
+.a3 svg {
+  display: inline-block;
+  height: 1.5rem;
+  width: auto;
+}
+
+.a3 > div:nth-of-type(3) {
+  background-color: #db3a50;
+  font-size: 1.8rem;
+  width: 3rem;
+  border-radius: 1rem;
+}
+
+.a4 {
+  margin: 0.5rem;
+  position: relative;
+}
+
+.a4 img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
