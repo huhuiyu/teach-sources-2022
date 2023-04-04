@@ -1,0 +1,58 @@
+body {
+  margin: 0px;
+  background-color: #000;
+  color: #dcdcdc;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container > div:nth-of-type(2) {
+  flex: 1;
+}
+
+.a1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.a1 svg {
+  display: inline-block;
+  height: 1.3rem;
+  width: auto;
+  margin-left: 1rem;
+}
+
+.a1 > div:first-of-type {
+  width: 4rem;
+  color: #000;
+}
+
+.a2 {
+  display: flex;
+  justify-content: space-around;
+  background-color: #222;
+  padding: 0.5rem 0px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.a2 svg {
+  display: inline-block;
+  height: 1.8rem;
+  width: auto;
+}
+
+.a2 > div:first-of-type {
+  color: #1afa29;
+}
+
+.a3 {
+  overflow: auto;
+}
+
