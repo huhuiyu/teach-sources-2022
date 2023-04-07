@@ -78,10 +78,107 @@ body {
 .a04 {
   display: flex;
   justify-content: space-around;
+  text-align: center;
+  background-color: #222;
+  padding: 0.5rem 0px;
+  font-size: 0.8rem;
 }
 
 .a04 svg {
   display: inline-block;
   height: 1.2rem;
   width: auto;
+}
+
+.a04 > div:first-of-type {
+  color: #f15353;
+}
+
+.a05 {
+  background-color: #ce4379;
+  color: #fff;
+  width: 2.5rem;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+}
+
+.a06 {
+  margin: 0.5rem;
+  position: relative;
+}
+
+.a06 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.a06 > div:first-of-type {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  color: #fff;
+  margin: 0.5rem 1rem;
+}
+
+.a07 {
+  display: flex;
+  margin: 0.5rem;
+  justify-content: space-between;
+}
+
+.a07 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.a07 > div {
+  width: 49%;
+  border-radius: 5px;
+  background-color: #222;
+}
+
+.a08 {
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  margin: 0.5rem;
+}
+
+.a09 {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+.up {
+  display: inline-block;
+  font-size: 0.6rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  padding: 0px 2px;
+}
+
+.menu > div {
+  width: 4px;
+  height: 4px;
+  background-color: #666;
+  margin: 2px 0px;
+  border-radius: 50%;
+}
+
+.zan {
+  display: inline-block;
+  color: rgb(199, 41, 191);
+  background-color: rgba(199, 41, 191, 0.4);
+  padding: 4px;
+  border-radius: 2px;
 }

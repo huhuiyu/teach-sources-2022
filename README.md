@@ -3,3 +3,5 @@
 - [2201班html](/2201html/)
 - [2202班html](/2202html/)
 - [2205班html](/2205html/)
+
+- [2201班javascript](/2201javascript/)
