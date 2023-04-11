@@ -56,3 +56,52 @@ body {
   overflow: auto;
 }
 
+.a4 {
+  display: flex;
+  padding: 0.5rem;
+  background-color: #222;
+}
+
+.a4 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.a4 > div:first-of-type {
+  width: 3rem;
+}
+
+.a4 > div:last-of-type {
+  width: 5rem;
+  text-align: right;
+  color: #999999;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+.a4 > div:nth-of-type(2) {
+  flex: 1;
+  margin: 0px 0.5rem;
+}
+
+.a4 svg {
+  display: inline-block;
+  height: 1rem;
+  width: auto;
+}
+
+.a5 > div {
+  /* 文字超出显示... */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.a5 > div:last-of-type {
+  font-size: 0.8rem;
+  color: #999999;
+  line-height: 2rem;
+}
