@@ -10,3 +10,70 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.container > div:nth-of-type(2) {
+  flex: 1;
+}
+
+.top-div {
+  background-color: #111;
+  color: #999;
+}
+
+.line01 {
+  display: flex;
+  padding: 0.5rem 1rem;
+  align-items: center;
+}
+
+.line01 img {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  margin: 0px 0.5rem;
+}
+
+.line01 > div {
+  flex: 1;
+  background-color: #333;
+  margin: 0px 0.5rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+}
+
+.line01 input {
+  background-color: #333;
+  outline: none;
+  border-width: 0px;
+}
+
+.line02 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.line02 > div {
+  padding: 0.5rem 0px;
+}
+
+.line02 .active {
+  color: #f15353;
+  border-bottom: 2px solid #f15353;
+}
+
+.line02 .menu {
+  width: 1rem;
+}
+
+.line02 .menu > div {
+  height: 2px;
+  background-color: #999;
+  margin: 0.25rem 0px;
+  border-radius: 1px;
+}
+
+.line02 .menu > div:first-of-type {
+  width: 60%;
+  transform: translateX(70%);
+}
