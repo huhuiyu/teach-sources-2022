@@ -1,0 +1,17 @@
+.btns {
+  margin: 1rem;
+}
+
+.btns > span {
+  display: inline-block;
+  border: 1px solid #ff0000;
+  padding: 0.2rem 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #ff0000;
+  color: #fff;
+}
