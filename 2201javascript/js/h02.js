@@ -28,3 +28,21 @@ btn01.addEventListener('click', () => {
 });
 
 //#endregion
+
+//#region 乘法的部分
+
+let txt03 = document.getElementById('txt03');
+let txt04 = document.getElementById('txt04');
+let btn02 = document.getElementById('btn02');
+let sp02 = document.getElementById('sp02');
+
+btn02.addEventListener('click', () => {
+  let num01 = txt03.value;
+  let num02 = txt04.value;
+
+  sp02.innerHTML = num01 * num02;
+});
+
+//#endregion
+
+// 完成减法和除法的效果，附加作业是完成取模（余商）的效果

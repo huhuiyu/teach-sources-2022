@@ -1,0 +1,24 @@
+/* #id值，表示匹配页面指定id的元素 */
+#div1 {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.btns {
+  margin: 1rem;
+}
+
+.btns > span {
+  display: inline-block;
+  border: 1px solid #ff0000;
+  margin: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btns .active {
+  background-color: #ff0000;
+  color: #fff;
+}
