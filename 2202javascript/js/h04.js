@@ -23,6 +23,38 @@ console.log('修改class属性的元素：', sp01, sp02, sp03);
 
 sp02.addEventListener('click', () => {
   console.log('点击sp02');
+  /* 
+    alt + shift + a
+    页面元素.classList可以操作页面元素class属性值
+    remove方法可以移除指定名称的class值
+    add方法可以添加指定名称的class值
+  */
+  // 先移除所有菜单元素的激活样式
+  sp01.classList.remove('active');
+  sp02.classList.remove('active');
+  sp03.classList.remove('active');
+  // 再给点击的元素添加激活样式
+  sp02.classList.add('active');
+});
+
+sp03.addEventListener('click', () => {
+  console.log('点击sp02');
+
+  sp01.classList.remove('active');
+  sp02.classList.remove('active');
+  sp03.classList.remove('active');
+
+  sp03.classList.add('active');
+});
+
+sp01.addEventListener('click', () => {
+  console.log('点击sp02');
+
+  sp01.classList.remove('active');
+  sp02.classList.remove('active');
+  sp03.classList.remove('active');
+
+  sp01.classList.add('active');
 });
 
 //#endregion
