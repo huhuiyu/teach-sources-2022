@@ -18,6 +18,7 @@ div {
   position: sticky;
   top: 0px;
   left: 0px;
+  min-width: 1366px;
 }
 
 .a01 > svg:first-of-type {
@@ -69,4 +70,72 @@ div {
 
 .a04 > div {
   margin: 0px 0.3rem;
+}
+
+.a05 {
+  background-color: #fb7299;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+}
+
+.a06 {
+  min-width: 1366px;
+  width: 90vw;
+  margin: 0px auto;
+}
+
+.a07 {
+  display: flex;
+  margin: 1rem 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.a08 {
+  display: flex;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.a08 svg {
+  display: block;
+  width: 3rem;
+  height: auto;
+  margin-bottom: -0.8rem;
+}
+
+.a08 > div {
+  margin-right: 0.5rem;
+}
+
+.a09 span {
+  display: inline-block;
+  width: 5em;
+  font-size: 0.8rem;
+  background-color: #eee;
+  padding: 0.3rem 0px;
+  text-align: center;
+  border-radius: 0.3rem;
+  margin: 0.3rem;
+}
+
+.a10 span {
+  display: inline-block;
+  margin: 0px 0.5rem;
+  color: #333;
+  font-size: 0.8rem;
+}
+
+.a10 .iconfont {
+  font-size: 1rem;
+}
+
+.a10 {
+  padding-left: 1rem;
+  border-left: 2px solid #999;
+}
+
+.a10 > div:first-of-type {
+  margin-bottom: 1rem;
 }
