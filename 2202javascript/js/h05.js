@@ -72,4 +72,30 @@ setInterval(() => {
   spNow.innerHTML = `${now}`;
 }, 1000);
 
+// 自定义时间显示格式
+let spTime = document.getElementById('spTime');
+
+setInterval(() => {
+  let time = new Date();
+  //  Date对象分部获取时间信息
+  let year = time.getFullYear();
+  let month = time.getMonth() + 1; // 月份是0-11，所以要加一处理
+  let day = time.getDate();
+  let hour = time.getHours();
+  let minute = time.getMinutes();
+  let second = time.getSeconds();
+
+  // 单位数前导补零
+  // ?:是三元表达式，？前面是一个逻辑表达式（真/假）
+  // ?后面是逻辑表达式为真时要执行的代码
+  // :后面时逻辑表达式为假时要执行的代码
+  month = month < 10 ? '0' + month : month;
+  day = day < 10 ? '0' + day : day;
+  hour = hour < 10 ? '0' + hour : hour;
+  minute = minute < 10 ? '0' + minute : minute;
+  second = second < 10 ? '0' + second : second;
+
+  spTime.innerHTML = `${year}年${month}月${day}日 ${hour}:${minute}:${second}`;
+}, 1000);
+
 //#endregion
