@@ -1,0 +1,85 @@
+.s1 {
+  font-size: 2rem;
+  -webkit-text-stroke: 1px #ff0000;
+}
+
+.s2 {
+  font-size: 2rem;
+  text-shadow: 1px 0px 0px #ff0000, 0px 1px 0px #ff0000, -1px 0px 0px #ff0000,
+    0px -1px 0px #ff0000, 0px 0px 0.5rem #ff0000;
+}
+
+.s3 {
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(#b21414, #3700ff);
+  color: #fff;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.s4 {
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  color: #fff;
+  background: linear-gradient(to right, #b21414, #3700ff);
+}
+
+.s5 {
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  color: #fff;
+  background: linear-gradient(to bottom right, #b21414, #3700ff);
+}
+
+.s6 {
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  color: #fff;
+  background: linear-gradient(30deg, #b21414, #ffff00, #3700ff);
+}
+
+.s7 {
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  color: #fff;
+  background: linear-gradient(90deg, #b21414 30%, #3700ff 80%);
+}
+
+/* 
+linear-gradient 径向渐变
+参数类型有：渐变的角度，可以是deg角度值，也可以是top，right这类方向
+渐变的颜色值，可以有多个，最少要有两个，颜色值还可以附加保留的进度
+参数之间用,分隔
+*/
+.s8 {
+  background: radial-gradient(#ff0000 30%, #3700ff);
+  font-size: 2rem;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  /* 文字居中效果 */
+  text-align: center;
+  line-height: 10rem;
+}
+
+.s9 {
+  background: radial-gradient(at 20% 20%, #ff0000, #3700ff);
+  font-size: 2rem;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  /* 文字居中效果 */
+  text-align: center;
+  line-height: 10rem;
+}
+
+/* 
+  radial-gradient是圆心渐变
+  颜色参数和径向渐变一样
+  没有角度参数，但是有圆心位置参数 at 横坐标 纵坐标
+*/

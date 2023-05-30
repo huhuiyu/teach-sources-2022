@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>特殊的选择器</title>
+  <link rel="stylesheet" href="./h04.css">
+</head>
+
+<body>
+
+  <label>
+    <input type="checkbox">游戏
+  </label>
+
+  <input type="checkbox">音乐
+
+  <label>
+    用户名：<input type="text">
+  </label>
+
+  <hr>
+  <!-- 
+    label的for可以和指定id的元素进行关联，而不需要放在label里面
+  -->
+  <label for="chk01">分离式label</label>
+  <hr>
+
+  <input id="chk01" type="checkbox">
+  <div>选中的效果演示区域</div>
+  <div>参照对象</div>
+
+</body>
+
+</html>
