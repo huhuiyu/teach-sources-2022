@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>多个js引入</title>
+</head>
+
+<body>
+
+
+  <!-- 
+    js导入可以有多个，但是一定要注意！
+    js的执行次序是按照导入的次序执行的。
+    所以公用的或者第三方js导入一般都在页面自己js之前导入
+    或者可以理解为调用其它js的js导入是在后面
+  -->
+  <script src="./js/tools.js"></script>
+  <script src="./js/h03.js"></script>
+
+
+
+</body>
+
+</html>

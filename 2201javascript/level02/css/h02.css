@@ -1,0 +1,19 @@
+.a1 {
+  width: 32vw;
+  margin: 1rem auto;
+}
+
+.a1 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.a2 {
+  width: 32vw;
+  height: 18vw;
+  margin: 0px auto;
+  background-image: url('../images/img28.jpg');
+  background-size: cover;
+  transition: all 1s;
+}
