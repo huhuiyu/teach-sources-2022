@@ -1,0 +1,23 @@
+body {
+  margin: 0px;
+}
+
+.a1 {
+  width: 32vw;
+  margin: 1rem auto;
+}
+
+.a1 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#div1 {
+  width: 32vw;
+  height: 18vw;
+  margin: 1rem auto;
+  background-image: url('../images/img28.jpg');
+  background-size: cover;
+  transition: all 2s;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>多js导入</title>
+</head>
+
+<body>
+
+
+
+  <!-- 
+    js的导入也可以有多个，js会严格的按照导入次序执行
+    所以导入的次序必须严格保持逻辑调用的次序
+    一般来说，公用的js都会先导入，页面自身逻辑的js最后导入
+    也可以理解为被调用的js先导入，要调用其它js的后导入
+  -->
+  <script src="./js/tools.js"></script>
+
+  <script src="./js/h03.js"></script>
+
+
+
+</body>
+
+</html>
