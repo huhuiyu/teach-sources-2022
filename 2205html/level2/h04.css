@@ -1,3 +1,71 @@
 #chk01 + div {
   color: #f00;
 }
+
+/* 
+  checked是radio和checkbox特有的伪类
+  表示被选中的状态
+*/
+#chk01:checked + div {
+  display: none;
+}
+
+#chk01 {
+  display: none;
+}
+
+/* 菜单点击效果相关样式 */
+#chkMenu {
+  display: none;
+}
+
+#chkMenu + div {
+  opacity: 0;
+  transition: all 1s;
+}
+
+#chkMenu:checked + div {
+  opacity: 1;
+}
+
+/* 模拟菜单按钮 */
+.btn-menu {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(24, 18, 185, 0.7);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.btn-menu:hover {
+  background-color: rgba(24, 18, 185, 1);
+  cursor: pointer;
+}
+
+.btn-menu > div {
+  box-sizing: border-box;
+  width: 100%;
+  height: 0.2rem;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+
+.btn-menu.active > div:nth-of-type(2) {
+  /* transparent是透明色 */
+  background-color: transparent;
+  /* visibility: hidden; */
+}
+
+.btn-menu.active > div:first-of-type {
+  transform: rotate(45deg) translateX(0.2rem);
+  transform-origin: 0.45rem;
+}
+
+.btn-menu.active > div:last-of-type {
+  transform: rotate(-45deg) translateX(0.2rem);
+  transform-origin: 0.45rem;
+}
