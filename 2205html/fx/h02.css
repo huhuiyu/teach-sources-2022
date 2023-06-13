@@ -1,0 +1,57 @@
+.a1,
+.a1 > div {
+  border: 1px solid #f00;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+img {
+  width: 5rem;
+  height: auto;
+  display: block;
+}
+
+.a2 {
+  /* 
+    flex是压力盒子显示模式，会约束一级子元素在一行上显示
+    justify-content是控制一级子元素的水平排列方式
+      常见的设定值：
+        space-between是分散对齐
+        space-around是将空白区域平均分配在所有元素的两侧
+        space-evenly是将空白区域平均分配
+        flex-start是靠左(默认)
+        flex-end是靠右
+        center是居中
+    align-items是控制一级子元素的垂直(交叉轴)排列方式
+      常见的设定值：
+        flex-start是靠上
+        flex-end是靠下
+        center是居中
+        stretch是拉伸（默认值）
+  */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.a3 {
+  display: flex;
+}
+
+/* 
+  flex样式是压力盒子的一级子元素特有的
+  该值越大所分配的空间也就越大
+  如果只有一个子元素分配了该属性，那么不论值是多少，该元素都会占满所有空白空间
+  由于flex会占用空白空间，所以容器的水平对齐方式会无效
+*/
+.a3 > div:nth-of-type(2) {
+  flex: 1;
+}
+
+.a3 > div:nth-of-type(1) {
+  flex: 3;
+}
+
+.a3 > div:nth-of-type(3) {
+  flex: 2;
+}

@@ -1,0 +1,31 @@
+.a1 {
+  /* 
+    元素所占用的大小是内外边距加上边框和宽高的总和
+  */
+  margin: 2rem;
+  padding: 2rem;
+  border: 5rem solid #f00;
+  width: 20rem;
+  height: 20rem;
+}
+
+.a2 {
+  /* 
+    border-box表示将边框和内边距加入到宽高的里面
+    简单的说就是盒子大小是宽高和外边距的总和
+  */
+  box-sizing: border-box;
+}
+
+.a3 {
+  margin: 1rem;
+  border: 5rem solid #f0f;
+  padding: 1rem;
+  width: 20rem;
+  height: 10vh;
+  /* 
+    行内元素是不支持盒模型相关样式，就是设置了也不会正确显示
+
+  */
+  display: inline-block;
+}
